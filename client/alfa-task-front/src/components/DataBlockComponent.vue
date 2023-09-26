@@ -16,7 +16,7 @@
         </tr>
         </thead>
         <tbody>
-        <tr v-for="(item, index) in dataTop" :key="index">
+        <tr v-for="(item) in dataTop" :key="item">
           <td>{{ item.place }}</td>
           <td>{{ item.fio }}</td>
           <td>{{ item.status }}</td>
