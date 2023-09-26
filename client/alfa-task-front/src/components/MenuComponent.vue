@@ -11,15 +11,15 @@
 export default {
   methods: {
     navigateToHome(route) {
-      this.$router.push("/#home");
+      this.$router.push(route).catch(() => {});
       this.$emit('menu-clicked', route);
     },
     navigateToTop5(route) {
-      this.$router.push(route);
+      this.$router.push(route).catch(() => {});
       this.$emit('menu-clicked', route);
     },
     navigateToFullList(route) {
-      this.$router.push(route);
+      this.$router.push(route).catch(() => {});
       this.$emit('menu-clicked', route);
     }
   }
